@@ -5,14 +5,14 @@ var negativeArr:[Int] = []
 
 for i in arr {
     if i < 0 {
-        minusArr.append(i)
+        negativeArr.append(i)
     }
     else {
-        plusArr.append(i)
+         negativeArr.append(i)
     }
 }
 
-print(minusArr+plusArr)
+print(negativeArr+negativeArr)
 
 
 ```
