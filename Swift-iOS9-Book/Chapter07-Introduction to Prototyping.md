@@ -15,7 +15,7 @@
 
 ---
 
-![](http://www.appcoda.com/learnswift/images/prototyping/prototyping-0.jpg)
+![Smaller icon](http://www.appcoda.com/learnswift/images/prototyping/prototyping-0.jpg)
 
 
 종이에 연필로 쉽고 빠르게 스케치하는 것이 관건이다. 빠르고 간단하며 수정이 쉽다는 장점이 있고 구체적이지 않고 구현할 항목이 많을 시에는 오래걸리는 단점을 가지고 있다. 
