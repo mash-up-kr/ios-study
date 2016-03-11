@@ -6,8 +6,8 @@ import Foundation
 
 extension Int {
     var factorial: Int {
-        guard 0 < self else { return 1 }
-        return (1...self).reduce(1, combine: *)
+        guard 1 < self else { return 1 }
+        return (2...self).reduce(1, combine: *)
     }
     
     var fsum: Int {
