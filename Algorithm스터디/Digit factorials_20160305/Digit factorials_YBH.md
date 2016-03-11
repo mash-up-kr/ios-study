@@ -1,3 +1,5 @@
+- Playground는 너무 느림. OS X 커멘트 라인 툴로 만들어서 해야 빠르다.
+
 ```swift
 
 import Foundation
@@ -20,7 +22,7 @@ extension Int {
 
 let factorials = [0.factorial, 1.factorial, 2.factorial, 3.factorial, 4.factorial, 5.factorial, 6.factorial, 7.factorial, 8.factorial, 9.factorial]
 
-// Answer 1
+// MARK: - Answer 1
 
 func answer() -> Int {
     var answer = 0, index = 10
@@ -33,13 +35,13 @@ func answer() -> Int {
     return answer
 }
 
-// Answer 2
+// MARK: - Answer 2
 
 func answer2() -> Int {
     return (10...2540160).filter { $0 == $0.fsum }.reduce(0, combine: +)
 }
 
-// Test
+// MARK: - Test
 
 var startSecond = NSDate().timeIntervalSince1970
 print("answer   : \(answer()) (\(NSDate().timeIntervalSince1970 - startSecond) sec)")
