@@ -1,4 +1,4 @@
-'''SWIFT
+'''swift
 import UIKit
 
 func factorial(x: Int) -> Int {
@@ -28,4 +28,4 @@ for var n in 1...3628799999999637120 {
     }
 }
 print(total)
-'''SWIFT
+'''swift
