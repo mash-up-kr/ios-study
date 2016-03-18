@@ -1,4 +1,4 @@
-```Swfit
+```Swift
 import Foundation
 
 func answer(arr: [Int]) -> Int {
