@@ -14,7 +14,7 @@ searchController = UISearchController(searchResultsController: nil)
 searchController.searchResultsUpdater = self
 tableView.tableHeaderView = searchController.searchBar 
 ```
-<br><br><br><br>
+<br><br>
 
 ## 2. Filtering Content
 
