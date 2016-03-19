@@ -9,8 +9,8 @@
 
 ## 1. Creating the Managed Object Model
 
-![](https://www.safaribooksonline.com/library/view/ios-components-and/9780133086898/graphics/13fig04.jpg)
 ![](http://www.appcoda.com/wp-content/uploads/2012/12/Managed-Object-Model-Add-Entity.jpg)
+![](https://www.safaribooksonline.com/library/view/ios-components-and/9780133086898/graphics/13fig04.jpg)
 <br><br><br><br>
 
 
