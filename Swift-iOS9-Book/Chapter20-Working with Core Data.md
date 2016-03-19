@@ -94,8 +94,7 @@ indexPath) -> Void in
 ReviewViewController {
         if let rating = reviewViewController.rating {
             restaurant.rating = rating
-            ratingButton.setImage(UIImage(named: rating), forState:
-UIControlState.Normal)
+            ratingButton.setImage(UIImage(named: rating), forState: UIControlState.Normal)
             if let managedObjectContext = (UIApplication.sharedApplication().delegate as? AppDelegate)?.managedObjectContext {
                 do {
                     try managedObjectContext.save()
