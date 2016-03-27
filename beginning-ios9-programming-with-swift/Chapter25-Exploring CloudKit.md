@@ -42,8 +42,8 @@ publicDatabase.performQuery(query, inZoneWithID: nil, completionHandler: {
 ```
 ######값을 불러오는 예시
 1.CKContainer 객체를 이용하여 접근하고자 하는 데이터가 있는 iCloud Container를 얻는다.</br>
-2.CKDatabase 객체로 해당 record가 존재하는 public/private database를 얻는다.
+2.CKDatabase 객체로 해당 record가 존재하는 public/private database를 얻는다.</br>
 3.fetch하기 원하는 데이터를 식별한다. record ID를 알 경우, CKFetchRecordOperation을 사용한다. record ID를 모를 경우,
-CKQuery를 만든 후, CKQueryOperation을 사용한다.
-4.결과값을 다루기 위해 operation의 completionHandler에 블럭을 정의한다.
+CKQuery를 만든 후, CKQueryOperation을 사용한다.</br>
+4.결과값을 다루기 위해 operation의 completionHandler에 블럭을 정의한다.</br>
 
