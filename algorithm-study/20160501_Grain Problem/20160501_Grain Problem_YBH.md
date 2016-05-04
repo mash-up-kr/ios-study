@@ -1,6 +1,4 @@
 ```Swift
-import Cocoa
-
 struct Grain {
     var name: String
     var weight: Float
