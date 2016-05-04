@@ -52,5 +52,7 @@ grains.sort { $0.caloriePerWeight > $1.caloriePerWeight }.forEach { sack.put($0.
 sack.printContent()
 ```
 
+```
 총 칼로리: 2850.0kcal
 곡물: 옥수수(5.0), 보리(4.0), 쌀(7.0), 콩(4.0), 조(0.0), 밀(0.0)
+```
