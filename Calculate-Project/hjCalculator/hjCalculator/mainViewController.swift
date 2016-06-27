@@ -15,39 +15,99 @@ class mainViewController: UIViewController {
     @IBAction func equBtn(sender: AnyObject) {
     }
     @IBAction func nineBtn(sender: AnyObject) {
+        if(resultLbl.text == "현정이의계산기" && resultLbl.text == "0"){
+            resultLbl.text = "9"
+        }
+        else{
+            result =  result + "9"
+            resultLbl.text = result
+        }
     }
     @IBAction func eightBtn(sender: AnyObject) {
+        if(resultLbl.text == "현정이의계산기" && resultLbl.text == "0"){
+            resultLbl.text = "8"
+        }
+        else{
+            result =  result + "8"
+            resultLbl.text = result
+        }
     }
 
     @IBAction func sevenBtn(sender: AnyObject) {
+        if(resultLbl.text == "현정이의계산기" && resultLbl.text == "0"){
+            resultLbl.text = "7"
+        }
+        else{
+            result =  result + "7"
+            resultLbl.text = result
+        }
     }
     @IBAction func sixBtn(sender: AnyObject) {
+        if(resultLbl.text == "현정이의계산기" && resultLbl.text == "0"){
+            resultLbl.text = "6"
+        }
+        else{
+            result =  result + "6"
+            resultLbl.text = result
+        }
     }
     @IBAction func fiveBtn(sender: AnyObject) {
+        if(resultLbl.text == "현정이의계산기" && resultLbl.text == "0"){
+            resultLbl.text = "5"
+        }
+        else{
+            result =  result + "5"
+            resultLbl.text = result
+        }
     }
 
     @IBAction func fourBtn(sender: AnyObject) {
+        if(resultLbl.text == "현정이의계산기" && resultLbl.text == "0"){
+            resultLbl.text = "4"
+        }
+        else{
+            result =  result + "4"
+            resultLbl.text = result
+        }
     }
 
     @IBAction func threeBtn(sender: AnyObject) {
+        if(resultLbl.text == "현정이의계산기" && resultLbl.text == "0"){
+            resultLbl.text = "3"
+        }
+        else{
+            result =  result + "3"
+            resultLbl.text = result
+        }
     }
     @IBAction func twoBtn(sender: AnyObject) {
-        result = "2"
-        resultLbl.text = result
+        if(resultLbl.text == "현정이의계산기" && resultLbl.text == "0"){
+            resultLbl.text = "2"
+        }
+        else{
+            result =  result + "2"
+            resultLbl.text = result
+        }
     }
     @IBAction func oneBtn(sender: AnyObject) {
-        if(resultLbl.text == "현정이의계산기"){
+        if(resultLbl.text == "현정이의계산기" && resultLbl.text == "0"){
             resultLbl.text = "1"
         }
         else{
             result =  result + "1"
             resultLbl.text = result
-
         }
     }
     @IBOutlet weak var resultLbl: UILabel!
+    
     @IBAction func zeroBtn(sender: AnyObject) {
-        resultLbl.text = "0000"
+        if(resultLbl.text == "현정이의계산기"){
+            resultLbl.text = "0"
+        }
+        else{
+            result =  result + "0"
+            resultLbl.text = result
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
