@@ -8,14 +8,32 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
-
+class MainViewController: UIViewController, MainViewControllerProtocol {
+    
+    // MARK: Child Component
+    var presenter: MainPresenterProtocol!
+    
+    // MARK: Properties
+    
+    // MARK: Views
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        MainRouter.injectDependencies(self)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    // MARK: Override Methods
+    
+    // MARK: View Event Methods
 
+}
+
+extension MainViewController: MainViewControllerProtocolForPresenter {
+    
+    // MARK: Presenter -> ViewController : View Setter
+    
+    // MARK: Presenter -> ViewController : View Getter
+    
+    // MARK: Presenter -> ViewController : Navigation
+    
 }
