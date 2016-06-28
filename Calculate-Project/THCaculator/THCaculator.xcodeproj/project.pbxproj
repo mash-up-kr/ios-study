@@ -8,12 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		E82CD6EB1D216FAC00755440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82CD6EA1D216FAC00755440 /* AppDelegate.swift */; };
-		E82CD6ED1D216FAC00755440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82CD6EC1D216FAC00755440 /* ViewController.swift */; };
 		E82CD6F01D216FAC00755440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82CD6EE1D216FAC00755440 /* Main.storyboard */; };
 		E82CD6F21D216FAD00755440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E82CD6F11D216FAD00755440 /* Assets.xcassets */; };
 		E82CD6F51D216FAD00755440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E82CD6F31D216FAD00755440 /* LaunchScreen.storyboard */; };
 		E82CD7001D216FAD00755440 /* THCaculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82CD6FF1D216FAD00755440 /* THCaculatorTests.swift */; };
 		E82CD70B1D216FAD00755440 /* THCaculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82CD70A1D216FAD00755440 /* THCaculatorUITests.swift */; };
+		E850D6331D22BB5900E9607A /* PresentCurrencyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6321D22BB5900E9607A /* PresentCurrencyProtocols.swift */; };
+		E850D6351D22BB7900E9607A /* PresentCurrencyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6341D22BB7900E9607A /* PresentCurrencyRouter.swift */; };
+		E850D6371D22BB9300E9607A /* PresentCurrencyAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6361D22BB9300E9607A /* PresentCurrencyAPIDataManager.swift */; };
+		E850D6391D22BBA300E9607A /* PresentCurrencyLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6381D22BBA300E9607A /* PresentCurrencyLocalDataManager.swift */; };
+		E850D63B1D22BBB300E9607A /* PresentCurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D63A1D22BBB300E9607A /* PresentCurrencyInteractor.swift */; };
+		E850D63D1D22BBC000E9607A /* PresentCurrencyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D63C1D22BBC000E9607A /* PresentCurrencyPresenter.swift */; };
+		E850D63F1D22BBDB00E9607A /* PresentCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D63E1D22BBDB00E9607A /* PresentCurrencyViewController.swift */; };
+		E850D6411D22BC5300E9607A /* DetailCurrencyProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6401D22BC5300E9607A /* DetailCurrencyProtocols.swift */; };
+		E850D6431D22BC6100E9607A /* DetailCurrencyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6421D22BC6100E9607A /* DetailCurrencyRouter.swift */; };
+		E850D6451D22BC7000E9607A /* DetailCurrencyAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6441D22BC7000E9607A /* DetailCurrencyAPIDataManager.swift */; };
+		E850D6471D22BC8000E9607A /* DetailCurrencyLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6461D22BC8000E9607A /* DetailCurrencyLocalDataManager.swift */; };
+		E850D6491D22BC8800E9607A /* DetailCurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6481D22BC8800E9607A /* DetailCurrencyInteractor.swift */; };
+		E850D64B1D22BC8F00E9607A /* DetailCurrencyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D64A1D22BC8F00E9607A /* DetailCurrencyPresenter.swift */; };
+		E850D64D1D22BC9C00E9607A /* DetailCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D64C1D22BC9C00E9607A /* DetailCurrencyViewController.swift */; };
+		E850D64F1D22BCC300E9607A /* AddCountryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D64E1D22BCC300E9607A /* AddCountryProtocols.swift */; };
+		E850D6511D22BCCC00E9607A /* AddCountryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6501D22BCCC00E9607A /* AddCountryRouter.swift */; };
+		E850D6531D22BCD900E9607A /* AddCountryAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6521D22BCD900E9607A /* AddCountryAPIDataManager.swift */; };
+		E850D6551D22BCE400E9607A /* AddCountryLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6541D22BCE400E9607A /* AddCountryLocalDataManager.swift */; };
+		E850D6571D22BCEC00E9607A /* AddCountryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6561D22BCEC00E9607A /* AddCountryInteractor.swift */; };
+		E850D6591D22BCF200E9607A /* AddCountryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D6581D22BCF200E9607A /* AddCountryPresenter.swift */; };
+		E850D65B1D22BCFC00E9607A /* AddCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E850D65A1D22BCFC00E9607A /* AddCountryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +56,6 @@
 /* Begin PBXFileReference section */
 		E82CD6E71D216FAC00755440 /* THCaculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THCaculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82CD6EA1D216FAC00755440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E82CD6EC1D216FAC00755440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E82CD6EF1D216FAC00755440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E82CD6F11D216FAD00755440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E82CD6F41D216FAD00755440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +66,27 @@
 		E82CD7061D216FAD00755440 /* THCaculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THCaculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82CD70A1D216FAD00755440 /* THCaculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THCaculatorUITests.swift; sourceTree = "<group>"; };
 		E82CD70C1D216FAD00755440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E850D6321D22BB5900E9607A /* PresentCurrencyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCurrencyProtocols.swift; sourceTree = "<group>"; };
+		E850D6341D22BB7900E9607A /* PresentCurrencyRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCurrencyRouter.swift; sourceTree = "<group>"; };
+		E850D6361D22BB9300E9607A /* PresentCurrencyAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCurrencyAPIDataManager.swift; sourceTree = "<group>"; };
+		E850D6381D22BBA300E9607A /* PresentCurrencyLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCurrencyLocalDataManager.swift; sourceTree = "<group>"; };
+		E850D63A1D22BBB300E9607A /* PresentCurrencyInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCurrencyInteractor.swift; sourceTree = "<group>"; };
+		E850D63C1D22BBC000E9607A /* PresentCurrencyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCurrencyPresenter.swift; sourceTree = "<group>"; };
+		E850D63E1D22BBDB00E9607A /* PresentCurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentCurrencyViewController.swift; sourceTree = "<group>"; };
+		E850D6401D22BC5300E9607A /* DetailCurrencyProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCurrencyProtocols.swift; sourceTree = "<group>"; };
+		E850D6421D22BC6100E9607A /* DetailCurrencyRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCurrencyRouter.swift; sourceTree = "<group>"; };
+		E850D6441D22BC7000E9607A /* DetailCurrencyAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCurrencyAPIDataManager.swift; sourceTree = "<group>"; };
+		E850D6461D22BC8000E9607A /* DetailCurrencyLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCurrencyLocalDataManager.swift; sourceTree = "<group>"; };
+		E850D6481D22BC8800E9607A /* DetailCurrencyInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCurrencyInteractor.swift; sourceTree = "<group>"; };
+		E850D64A1D22BC8F00E9607A /* DetailCurrencyPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCurrencyPresenter.swift; sourceTree = "<group>"; };
+		E850D64C1D22BC9C00E9607A /* DetailCurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCurrencyViewController.swift; sourceTree = "<group>"; };
+		E850D64E1D22BCC300E9607A /* AddCountryProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCountryProtocols.swift; sourceTree = "<group>"; };
+		E850D6501D22BCCC00E9607A /* AddCountryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCountryRouter.swift; sourceTree = "<group>"; };
+		E850D6521D22BCD900E9607A /* AddCountryAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCountryAPIDataManager.swift; sourceTree = "<group>"; };
+		E850D6541D22BCE400E9607A /* AddCountryLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCountryLocalDataManager.swift; sourceTree = "<group>"; };
+		E850D6561D22BCEC00E9607A /* AddCountryInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCountryInteractor.swift; sourceTree = "<group>"; };
+		E850D6581D22BCF200E9607A /* AddCountryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCountryPresenter.swift; sourceTree = "<group>"; };
+		E850D65A1D22BCFC00E9607A /* AddCountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCountryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +137,10 @@
 		E82CD6E91D216FAC00755440 /* THCaculator */ = {
 			isa = PBXGroup;
 			children = (
-				E82CD6EA1D216FAC00755440 /* AppDelegate.swift */,
-				E82CD6EC1D216FAC00755440 /* ViewController.swift */,
-				E82CD6EE1D216FAC00755440 /* Main.storyboard */,
-				E82CD6F11D216FAD00755440 /* Assets.xcassets */,
-				E82CD6F31D216FAD00755440 /* LaunchScreen.storyboard */,
-				E82CD6F61D216FAD00755440 /* Info.plist */,
+				E850D6061D226D0D00E9607A /* Application */,
+				E850D6071D226D1F00E9607A /* Resources */,
+				E850D60E1D226DB500E9607A /* Shared */,
+				E850D60D1D226D9C00E9607A /* Supporting Files */,
 			);
 			path = THCaculator;
 			sourceTree = "<group>";
@@ -110,8 +148,8 @@
 		E82CD6FE1D216FAD00755440 /* THCaculatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				E82CD6FF1D216FAD00755440 /* THCaculatorTests.swift */,
 				E82CD7011D216FAD00755440 /* Info.plist */,
+				E82CD6FF1D216FAD00755440 /* THCaculatorTests.swift */,
 			);
 			path = THCaculatorTests;
 			sourceTree = "<group>";
@@ -119,10 +157,352 @@
 		E82CD7091D216FAD00755440 /* THCaculatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E82CD70A1D216FAD00755440 /* THCaculatorUITests.swift */,
 				E82CD70C1D216FAD00755440 /* Info.plist */,
+				E82CD70A1D216FAD00755440 /* THCaculatorUITests.swift */,
 			);
 			path = THCaculatorUITests;
+			sourceTree = "<group>";
+		};
+		E850D6061D226D0D00E9607A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E82CD6EA1D216FAC00755440 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E850D6071D226D1F00E9607A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6081D226D3500E9607A /* Data Model */,
+				E850D6091D226D4200E9607A /* Fonts */,
+				E850D60A1D226D4B00E9607A /* Frameworks */,
+				E850D60B1D226D5A00E9607A /* Images */,
+				E850D60C1D226D6900E9607A /* Storyboad */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E850D6081D226D3500E9607A /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		E850D6091D226D4200E9607A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E850D60A1D226D4B00E9607A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		E850D60B1D226D5A00E9607A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E82CD6F11D216FAD00755440 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E850D60C1D226D6900E9607A /* Storyboad */ = {
+			isa = PBXGroup;
+			children = (
+				E82CD6F31D216FAD00755440 /* LaunchScreen.storyboard */,
+				E82CD6EE1D216FAC00755440 /* Main.storyboard */,
+			);
+			path = Storyboad;
+			sourceTree = "<group>";
+		};
+		E850D60D1D226D9C00E9607A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E82CD6F61D216FAD00755440 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E850D60E1D226DB500E9607A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E850D60F1D226DC300E9607A /* Cell */,
+				E850D6131D226E0000E9607A /* Controllers */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E850D60F1D226DC300E9607A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6101D226DCF00E9607A /* Collection View */,
+				E850D6121D226DE200E9607A /* Table View */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E850D6101D226DCF00E9607A /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
+		E850D6121D226DE200E9607A /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		E850D6131D226E0000E9607A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6161D226E1F00E9607A /* AddCountry */,
+				E850D6151D226E1800E9607A /* DetailCurrency */,
+				E850D6141D226E0F00E9607A /* PresentCurrency */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E850D6141D226E0F00E9607A /* PresentCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6171D226E4000E9607A /* DataManager */,
+				E850D6181D226E4B00E9607A /* Interactor */,
+				E850D6191D226E5600E9607A /* Presenter */,
+				E850D61A1D226E5A00E9607A /* Protocols */,
+				E850D6201D22B92300E9607A /* Router */,
+				E850D61B1D226E6300E9607A /* View */,
+			);
+			path = PresentCurrency;
+			sourceTree = "<group>";
+		};
+		E850D6151D226E1800E9607A /* DetailCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6231D22B94400E9607A /* DataManager */,
+				E850D6221D22B93E00E9607A /* Interactor */,
+				E850D6211D22B93900E9607A /* Presenter */,
+				E850D6251D22B94C00E9607A /* Protocols */,
+				E850D6241D22B94900E9607A /* Router */,
+				E850D61F1D22B91900E9607A /* View */,
+			);
+			path = DetailCurrency;
+			sourceTree = "<group>";
+		};
+		E850D6161D226E1F00E9607A /* AddCountry */ = {
+			isa = PBXGroup;
+			children = (
+				E850D62A1D22B9B700E9607A /* DataManager */,
+				E850D6291D22B9AE00E9607A /* Interactor */,
+				E850D6281D22B96200E9607A /* Presenter */,
+				E850D62C1D22B9BE00E9607A /* Protocols */,
+				E850D62B1D22B9BB00E9607A /* Router */,
+				E850D6261D22B95200E9607A /* View */,
+			);
+			path = AddCountry;
+			sourceTree = "<group>";
+		};
+		E850D6171D226E4000E9607A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E850D61E1D226F0400E9607A /* API */,
+				E850D61D1D226F0100E9607A /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		E850D6181D226E4B00E9607A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E850D63A1D22BBB300E9607A /* PresentCurrencyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E850D6191D226E5600E9607A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E850D63C1D22BBC000E9607A /* PresentCurrencyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E850D61A1D226E5A00E9607A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6321D22BB5900E9607A /* PresentCurrencyProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E850D61B1D226E6300E9607A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E850D63E1D22BBDB00E9607A /* PresentCurrencyViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E850D61D1D226F0100E9607A /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6381D22BBA300E9607A /* PresentCurrencyLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		E850D61E1D226F0400E9607A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6361D22BB9300E9607A /* PresentCurrencyAPIDataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E850D61F1D22B91900E9607A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E850D64C1D22BC9C00E9607A /* DetailCurrencyViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E850D6201D22B92300E9607A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6341D22BB7900E9607A /* PresentCurrencyRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E850D6211D22B93900E9607A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E850D64A1D22BC8F00E9607A /* DetailCurrencyPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E850D6221D22B93E00E9607A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6481D22BC8800E9607A /* DetailCurrencyInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E850D6231D22B94400E9607A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E850D62E1D22BB0A00E9607A /* API */,
+				E850D62D1D22BB0500E9607A /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		E850D6241D22B94900E9607A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6421D22BC6100E9607A /* DetailCurrencyRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E850D6251D22B94C00E9607A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6401D22BC5300E9607A /* DetailCurrencyProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E850D6261D22B95200E9607A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E850D65A1D22BCFC00E9607A /* AddCountryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E850D6281D22B96200E9607A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6581D22BCF200E9607A /* AddCountryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E850D6291D22B9AE00E9607A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6561D22BCEC00E9607A /* AddCountryInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E850D62A1D22B9B700E9607A /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6301D22BB1400E9607A /* API */,
+				E850D62F1D22BB1000E9607A /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		E850D62B1D22B9BB00E9607A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6501D22BCCC00E9607A /* AddCountryRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		E850D62C1D22B9BE00E9607A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E850D64E1D22BCC300E9607A /* AddCountryProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E850D62D1D22BB0500E9607A /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6461D22BC8000E9607A /* DetailCurrencyLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		E850D62E1D22BB0A00E9607A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6441D22BC7000E9607A /* DetailCurrencyAPIDataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E850D62F1D22BB1000E9607A /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6541D22BCE400E9607A /* AddCountryLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		E850D6301D22BB1400E9607A /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E850D6521D22BCD900E9607A /* AddCountryAPIDataManager.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +636,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E82CD6ED1D216FAC00755440 /* ViewController.swift in Sources */,
+				E850D6391D22BBA300E9607A /* PresentCurrencyLocalDataManager.swift in Sources */,
+				E850D64B1D22BC8F00E9607A /* DetailCurrencyPresenter.swift in Sources */,
+				E850D64D1D22BC9C00E9607A /* DetailCurrencyViewController.swift in Sources */,
+				E850D6591D22BCF200E9607A /* AddCountryPresenter.swift in Sources */,
+				E850D6531D22BCD900E9607A /* AddCountryAPIDataManager.swift in Sources */,
+				E850D6431D22BC6100E9607A /* DetailCurrencyRouter.swift in Sources */,
+				E850D6571D22BCEC00E9607A /* AddCountryInteractor.swift in Sources */,
+				E850D64F1D22BCC300E9607A /* AddCountryProtocols.swift in Sources */,
+				E850D6451D22BC7000E9607A /* DetailCurrencyAPIDataManager.swift in Sources */,
+				E850D6471D22BC8000E9607A /* DetailCurrencyLocalDataManager.swift in Sources */,
+				E850D6371D22BB9300E9607A /* PresentCurrencyAPIDataManager.swift in Sources */,
+				E850D6411D22BC5300E9607A /* DetailCurrencyProtocols.swift in Sources */,
+				E850D63B1D22BBB300E9607A /* PresentCurrencyInteractor.swift in Sources */,
+				E850D65B1D22BCFC00E9607A /* AddCountryViewController.swift in Sources */,
+				E850D63F1D22BBDB00E9607A /* PresentCurrencyViewController.swift in Sources */,
+				E850D6331D22BB5900E9607A /* PresentCurrencyProtocols.swift in Sources */,
+				E850D6491D22BC8800E9607A /* DetailCurrencyInteractor.swift in Sources */,
+				E850D63D1D22BBC000E9607A /* PresentCurrencyPresenter.swift in Sources */,
+				E850D6551D22BCE400E9607A /* AddCountryLocalDataManager.swift in Sources */,
 				E82CD6EB1D216FAC00755440 /* AppDelegate.swift in Sources */,
+				E850D6351D22BB7900E9607A /* PresentCurrencyRouter.swift in Sources */,
+				E850D6511D22BCCC00E9607A /* AddCountryRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +699,7 @@
 				E82CD6EF1D216FAC00755440 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		E82CD6F31D216FAD00755440 /* LaunchScreen.storyboard */ = {
@@ -307,6 +708,7 @@
 				E82CD6F41D216FAD00755440 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -399,7 +801,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = THCaculator/Info.plist;
+				INFOPLIST_FILE = "THCaculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mashup.THCaculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,7 +812,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = THCaculator/Info.plist;
+				INFOPLIST_FILE = "THCaculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mashup.THCaculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +884,7 @@
 				E82CD7111D216FAD00755440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E82CD7121D216FAD00755440 /* Build configuration list for PBXNativeTarget "THCaculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +893,7 @@
 				E82CD7141D216FAD00755440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E82CD7151D216FAD00755440 /* Build configuration list for PBXNativeTarget "THCaculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +902,7 @@
 				E82CD7171D216FAD00755440 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
