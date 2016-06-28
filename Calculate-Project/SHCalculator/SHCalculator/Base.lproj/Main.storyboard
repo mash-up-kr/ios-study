@@ -183,6 +183,9 @@
                                                 <rect key="frame" x="90" y="0.0" width="30" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="="/>
+                                                <connections>
+                                                    <action selector="displayValue" destination="BYZ-38-t0r" eventType="touchUpInside" id="SNm-HH-dHE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

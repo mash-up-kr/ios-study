@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
-    var operationStack = Array<String>()
-    var operandStack = Array<String>()
+    var stack = Array<String>()
+    //var operandStack = Array<String>()
     var checkingOfUserNumber = false
  
     override func viewDidLoad() {
@@ -38,26 +38,65 @@ class ViewController: UIViewController {
     
     //연산자
     @IBAction func pushOperationToStack(sender: UIButton) {
-        operandStack.append(resultLabel.text!)
-        operationStack.append(sender.currentTitle!)
+        stack.append(resultLabel.text!)
+        stack.append(sender.currentTitle!)
         checkingOfUserNumber = false
         
     }
     
     
     //=
-    @IBAction func operate() {
+    func operate() {
+     
+        var startIdx = 0
         
+        for idx in startIdx..<stack.count {
+            
+            switch stack[idx] {
+            case "*":
+                let n1 :Double? = Double(stack[idx-1])
+                let n2 :Double? = Double(stack[idx+1])
+                stack[idx] = String(n1! * n2!)
+                stack.removeAtIndex(idx-1)
+                stack.removeAtIndex(idx)
+                startIdx = idx
+            case "/":
+                let n1 :Double? = Double(stack[idx-1])
+                let n2 :Double? = Double(stack[idx+1])
+                stack[idx] = String(n1! / n2!)
+                stack.removeAtIndex(idx-1)
+                stack.removeAtIndex(idx)
+            default: break
+            }
+        }
+        
+        for idx in 0...stack.count {
+            switch stack[idx] {
+            case "+":
+                let n1 :Double? = Double(stack[idx-1])
+                let n2 :Double? = Double(stack[idx+1])
+                stack[idx] = String(n1! + n2!)
+                stack.removeAtIndex(idx-1)
+                stack.removeAtIndex(idx)
+            case "-":
+                let n1 :Double? = Double(stack[idx-1])
+                let n2 :Double? = Double(stack[idx+1])
+                stack[idx] = String(n1! - n2!)
+                stack.removeAtIndex(idx-1)
+                stack.removeAtIndex(idx)
+            default: print(stack)
+            }
+        }
         
     }
     
-   
     
     
-   func displayValue(sender: AnyObject) {
-        
-        
-        
+   @IBAction func displayValue() {
+
+        stack.append(resultLabel.text!)
+        operate()
+        resultLabel.text = stack[0]
     }
     
 
