@@ -1,12 +1,15 @@
 PODS:
+  - Cartography (0.6.0)
   - SwiftString (0.5)
 
 DEPENDENCIES:
+  - Cartography
   - SwiftString
 
 SPEC CHECKSUMS:
+  Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
   SwiftString: ec9c31c55b2aa147a1154f5f5f8483dc71e3165f
 
-PODFILE CHECKSUM: 6cffd3c78cfdeaa363eaac7a414f4c507647fa59
+PODFILE CHECKSUM: 89e39a6bf029cdad0c7f9e6bc4bc6f0095f6e730
 
 COCOAPODS: 1.0.1

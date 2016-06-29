@@ -455,8 +455,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRn-x2-zY6" userLabel="Result" customClass="UIGlowRoundedButton" customModule="RyanCalculator" customModuleProvider="target">
-                                <rect key="frame" x="60" y="538" width="480" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRn-x2-zY6" userLabel="Result" customClass="UIJellyAnimationButton" customModule="RyanCalculator" customModuleProvider="target">
+                                <rect key="frame" x="65" y="538" width="470" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="YQL-Sf-hY2"/>
                                 </constraints>
@@ -483,14 +483,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.22352941179999999" green="0.28627450980000002" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="ZRn-x2-zY6" firstAttribute="width" secondItem="DO9-dg-ASs" secondAttribute="width" constant="-80" id="9iC-t1-zkM"/>
                             <constraint firstItem="DO9-dg-ASs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="CBI-ni-fNc"/>
                             <constraint firstItem="DO9-dg-ASs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="CuV-2N-nfo"/>
                             <constraint firstItem="DO9-dg-ASs" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-40" id="ELu-vi-mDJ"/>
                             <constraint firstItem="DO9-dg-ASs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-25" id="KBs-eC-bAD"/>
-                            <constraint firstItem="ZRn-x2-zY6" firstAttribute="leading" secondItem="DO9-dg-ASs" secondAttribute="leading" constant="35" id="NIF-Us-Wpe"/>
+                            <constraint firstItem="ZRn-x2-zY6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ViE-9c-LzC"/>
                             <constraint firstItem="5UQ-nQ-kic" firstAttribute="bottom" secondItem="ZRn-x2-zY6" secondAttribute="top" id="ZKr-3Y-7Md"/>
                             <constraint firstItem="ZRn-x2-zY6" firstAttribute="centerY" secondItem="DO9-dg-ASs" secondAttribute="bottom" id="dDH-nK-Re0"/>
-                            <constraint firstItem="ZRn-x2-zY6" firstAttribute="trailing" secondItem="DO9-dg-ASs" secondAttribute="trailing" constant="-35" id="qpe-rN-n89"/>
                         </constraints>
                     </view>
                 </viewController>

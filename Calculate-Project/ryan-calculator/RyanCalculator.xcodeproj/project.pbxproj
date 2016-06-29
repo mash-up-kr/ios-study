@@ -10,6 +10,7 @@
 		47679848CD0D21617CF5E653 /* Pods_RyanCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE43639368D60B8E5C4DBF2 /* Pods_RyanCalculator.framework */; };
 		A646801A1D24016E00135C2B /* UIAnimButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64680191D24016E00135C2B /* UIAnimButton.swift */; };
 		A646801C1D240C7200135C2B /* UIColor+RyanCal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A646801B1D240C7200135C2B /* UIColor+RyanCal.swift */; };
+		A646801E1D240DE800135C2B /* UIJellyAnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A646801D1D240DE800135C2B /* UIJellyAnimationButton.swift */; };
 		A6A27B5F1D215CA9001673EB /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A27B5E1D215CA9001673EB /* MainProtocols.swift */; };
 		A6A27B611D215CB2001673EB /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A27B601D215CB2001673EB /* MainPresenter.swift */; };
 		A6A27B631D215CC6001673EB /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A27B621D215CC6001673EB /* MainInteractor.swift */; };
@@ -36,6 +37,7 @@
 		9DB00173605D9F51C57074AD /* Pods-RyanCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RyanCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-RyanCalculator/Pods-RyanCalculator.release.xcconfig"; sourceTree = "<group>"; };
 		A64680191D24016E00135C2B /* UIAnimButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAnimButton.swift; sourceTree = "<group>"; };
 		A646801B1D240C7200135C2B /* UIColor+RyanCal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RyanCal.swift"; sourceTree = "<group>"; };
+		A646801D1D240DE800135C2B /* UIJellyAnimationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIJellyAnimationButton.swift; sourceTree = "<group>"; };
 		A6A27B5E1D215CA9001673EB /* MainProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
 		A6A27B601D215CB2001673EB /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		A6A27B621D215CC6001673EB /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				A64680191D24016E00135C2B /* UIAnimButton.swift */,
 				A6A27B6B1D216581001673EB /* UIGlowRoundedButton.swift */,
 				A6A27B671D216023001673EB /* UIGlowRoundedView.swift */,
+				A646801D1D240DE800135C2B /* UIJellyAnimationButton.swift */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				A6D840631D2155790079C7E5 /* MainViewController.swift in Sources */,
 				A6A27B651D215D83001673EB /* MainRouter.swift in Sources */,
 				A6D8407C1D2159180079C7E5 /* RouterProtocol.swift in Sources */,
+				A646801E1D240DE800135C2B /* UIJellyAnimationButton.swift in Sources */,
 				A6A27B6C1D216581001673EB /* UIGlowRoundedButton.swift in Sources */,
 				A6D840611D2155790079C7E5 /* AppDelegate.swift in Sources */,
 				A6D8407A1D2159180079C7E5 /* InteractorProtocol.swift in Sources */,
