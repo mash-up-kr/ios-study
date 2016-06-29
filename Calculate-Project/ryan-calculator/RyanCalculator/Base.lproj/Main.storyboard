@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -19,7 +20,429 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DO9-dg-ASs" customClass="UIGlowRoundedView" customModule="RyanCalculator" customModuleProvider="target">
                                 <rect key="frame" x="25" y="30" width="550" height="530"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zg0-29-ihk">
+                                        <rect key="frame" x="0.0" y="0.0" width="550" height="176.5"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UQ-nQ-kic" userLabel="Button Container">
+                                        <rect key="frame" x="0.0" y="176" width="550" height="331.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GjH-cv-fqB">
+                                                <rect key="frame" x="0.0" y="0.0" width="550" height="332"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="T3c-4b-6Ye" userLabel="Line 1">
+                                                        <rect key="frame" x="16" y="12" width="518" height="77"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wfu-zY-W0t">
+                                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdr-nl-YyP" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="8Vl-ZM-Fzl"/>
+                                                                            <constraint firstAttribute="width" constant="45" id="LKb-cU-QMP"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="7">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClick7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nRf-4N-YyT"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="xdr-nl-YyP" firstAttribute="centerX" secondItem="Wfu-zY-W0t" secondAttribute="centerX" id="IMH-w8-1fa"/>
+                                                                    <constraint firstItem="xdr-nl-YyP" firstAttribute="centerY" secondItem="Wfu-zY-W0t" secondAttribute="centerY" id="hZQ-yT-9ZI"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgU-Py-eT9">
+                                                                <rect key="frame" x="129.5" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIX-OW-sba" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="0C4-Z0-OQN"/>
+                                                                            <constraint firstAttribute="width" constant="45" id="94d-ir-EJU"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="8">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClick8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tAq-lP-Ub0"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="sIX-OW-sba" firstAttribute="centerY" secondItem="hgU-Py-eT9" secondAttribute="centerY" id="HPR-QR-W4i"/>
+                                                                    <constraint firstItem="sIX-OW-sba" firstAttribute="centerX" secondItem="hgU-Py-eT9" secondAttribute="centerX" id="h4v-vq-7Ky"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9d-zr-EcL">
+                                                                <rect key="frame" x="259" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDr-7a-DjO" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="45" id="2IC-BY-ovs"/>
+                                                                            <constraint firstAttribute="height" constant="45" id="duy-UJ-h7R"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="9">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClick9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nM0-dT-Xqw"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="eDr-7a-DjO" firstAttribute="centerY" secondItem="Y9d-zr-EcL" secondAttribute="centerY" id="g9b-3d-GVi"/>
+                                                                    <constraint firstItem="eDr-7a-DjO" firstAttribute="centerX" secondItem="Y9d-zr-EcL" secondAttribute="centerX" id="gcm-aB-jjp"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSc-Xb-XC3">
+                                                                <rect key="frame" x="388.5" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYN-zb-OKQ" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="45" id="DiS-c1-UUp"/>
+                                                                            <constraint firstAttribute="height" constant="45" id="WiY-o5-6wb"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="/">
+                                                                            <color key="titleColor" red="0.34509803921568627" green="0.70196078431372544" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClickDivide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iN0-qD-6Zs"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="EYN-zb-OKQ" firstAttribute="centerY" secondItem="bSc-Xb-XC3" secondAttribute="centerY" id="CRa-ri-b7X"/>
+                                                                    <constraint firstItem="EYN-zb-OKQ" firstAttribute="centerX" secondItem="bSc-Xb-XC3" secondAttribute="centerX" id="gz4-H7-GcI"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vDh-9Y-NVX" userLabel="Line 2">
+                                                        <rect key="frame" x="16" y="89" width="518" height="77"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojh-Ge-WKM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEw-id-70Z" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="S24-2g-2cg"/>
+                                                                            <constraint firstAttribute="width" constant="45" id="i4i-MU-XuT"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="4">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClick4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e1l-gS-XJ3"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="eEw-id-70Z" firstAttribute="centerY" secondItem="Ojh-Ge-WKM" secondAttribute="centerY" id="UwS-fw-CcA"/>
+                                                                    <constraint firstItem="eEw-id-70Z" firstAttribute="centerX" secondItem="Ojh-Ge-WKM" secondAttribute="centerX" id="ZuZ-Wm-YRN"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bh-nG-3z5">
+                                                                <rect key="frame" x="129.5" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFT-pl-Vai" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="45" id="1qt-CI-ZNd"/>
+                                                                            <constraint firstAttribute="height" constant="45" id="jpZ-cB-gkO"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="5">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClick5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nXi-xd-zm8"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="BFT-pl-Vai" firstAttribute="centerX" secondItem="7Bh-nG-3z5" secondAttribute="centerX" id="Amd-gX-asU"/>
+                                                                    <constraint firstItem="BFT-pl-Vai" firstAttribute="centerY" secondItem="7Bh-nG-3z5" secondAttribute="centerY" id="oAo-sV-D5v"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D53-Ty-NqQ">
+                                                                <rect key="frame" x="259" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfY-xa-fO7" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="Qg9-7c-qgP"/>
+                                                                            <constraint firstAttribute="width" constant="45" id="ULb-ua-XOQ"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="6">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClick6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cod-LB-MAQ"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="IfY-xa-fO7" firstAttribute="centerY" secondItem="D53-Ty-NqQ" secondAttribute="centerY" id="cex-bn-thh"/>
+                                                                    <constraint firstItem="IfY-xa-fO7" firstAttribute="centerX" secondItem="D53-Ty-NqQ" secondAttribute="centerX" id="qoW-0L-mkV"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qp5-VE-17C">
+                                                                <rect key="frame" x="388.5" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXL-oR-ICx" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="45" id="7Rl-Ge-Ckm"/>
+                                                                            <constraint firstAttribute="height" constant="45" id="nJ6-89-6wz"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="X">
+                                                                            <color key="titleColor" red="0.34509803921568627" green="0.70196078431372544" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClickMultiple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGn-Nc-7gS"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="oXL-oR-ICx" firstAttribute="centerX" secondItem="Qp5-VE-17C" secondAttribute="centerX" id="K3X-c6-ug9"/>
+                                                                    <constraint firstItem="oXL-oR-ICx" firstAttribute="centerY" secondItem="Qp5-VE-17C" secondAttribute="centerY" id="SG0-TT-jxX"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Hd0-fg-Tmc" userLabel="Line 3">
+                                                        <rect key="frame" x="16" y="166" width="518" height="77"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTu-ry-PPA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2h-dr-vsA" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="55N-8i-Di1"/>
+                                                                            <constraint firstAttribute="width" constant="45" id="9CO-l7-T60"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="1">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClick1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XvV-Z1-qST"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="W2h-dr-vsA" firstAttribute="centerX" secondItem="dTu-ry-PPA" secondAttribute="centerX" id="EaT-h0-qiZ"/>
+                                                                    <constraint firstItem="W2h-dr-vsA" firstAttribute="centerY" secondItem="dTu-ry-PPA" secondAttribute="centerY" id="krd-it-cZ9"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DOl-i4-wrA">
+                                                                <rect key="frame" x="129.5" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wc2-VI-Bdd" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="DnD-Zp-Tlf"/>
+                                                                            <constraint firstAttribute="width" constant="45" id="VsN-b9-L3o"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="2">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClick2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSg-aw-yhW"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="wc2-VI-Bdd" firstAttribute="centerX" secondItem="DOl-i4-wrA" secondAttribute="centerX" id="N5Y-am-gVF"/>
+                                                                    <constraint firstItem="wc2-VI-Bdd" firstAttribute="centerY" secondItem="DOl-i4-wrA" secondAttribute="centerY" id="mG0-1T-uq2"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6B8-E1-2hk">
+                                                                <rect key="frame" x="259" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wt-1U-hgV" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="45" id="NEC-H7-fRs"/>
+                                                                            <constraint firstAttribute="height" constant="45" id="acd-r1-A3q"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="3">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClick3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aaW-Ry-ZxZ"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="0wt-1U-hgV" firstAttribute="centerX" secondItem="6B8-E1-2hk" secondAttribute="centerX" id="Qru-Ix-LPD"/>
+                                                                    <constraint firstItem="0wt-1U-hgV" firstAttribute="centerY" secondItem="6B8-E1-2hk" secondAttribute="centerY" id="wXh-1e-mjL"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCE-Ua-fao">
+                                                                <rect key="frame" x="388.5" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koM-yy-bOg" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="RbI-cw-w4Y"/>
+                                                                            <constraint firstAttribute="width" constant="45" id="jco-ZQ-z64"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="-">
+                                                                            <color key="titleColor" red="0.34509803921568627" green="0.70196078431372544" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClickMinus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0CM-Za-Ufo"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="koM-yy-bOg" firstAttribute="centerX" secondItem="lCE-Ua-fao" secondAttribute="centerX" id="2iW-Fz-T0q"/>
+                                                                    <constraint firstItem="koM-yy-bOg" firstAttribute="centerY" secondItem="lCE-Ua-fao" secondAttribute="centerY" id="9ck-9B-mM8"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Izm-Tu-LJQ" userLabel="Line 4">
+                                                        <rect key="frame" x="16" y="243" width="518" height="77"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ytP-Bv-QsC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ped-55-7Oz" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="fpC-8b-Mjq"/>
+                                                                            <constraint firstAttribute="width" constant="45" id="rcT-I8-5Ju"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="C">
+                                                                            <color key="titleColor" red="0.95294117647058818" green="0.52156862745098043" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClickClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKi-LC-8F2"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="ped-55-7Oz" firstAttribute="centerY" secondItem="ytP-Bv-QsC" secondAttribute="centerY" id="3nm-XK-9DT"/>
+                                                                    <constraint firstItem="ped-55-7Oz" firstAttribute="centerX" secondItem="ytP-Bv-QsC" secondAttribute="centerX" id="pfq-Rd-fnN"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeR-xA-v4u">
+                                                                <rect key="frame" x="129.5" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUe-r6-hjZ" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="45" id="K67-4D-5NJ"/>
+                                                                            <constraint firstAttribute="height" constant="45" id="S2s-Kh-fqt"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="0">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <state key="highlighted">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClick0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Z9-fb-MsU"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="qUe-r6-hjZ" firstAttribute="centerX" secondItem="aeR-xA-v4u" secondAttribute="centerX" id="nq2-V3-ubU"/>
+                                                                    <constraint firstItem="qUe-r6-hjZ" firstAttribute="centerY" secondItem="aeR-xA-v4u" secondAttribute="centerY" id="xgc-i0-yW3"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNQ-bW-xLE">
+                                                                <rect key="frame" x="259" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9le-As-KeK" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="45" id="Ff2-j8-t23"/>
+                                                                            <constraint firstAttribute="width" constant="45" id="RJe-1j-jIA"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title=".">
+                                                                            <color key="titleColor" red="0.57647058823529407" green="0.62352941176470589" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClickDot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="haS-uX-kba"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="9le-As-KeK" firstAttribute="centerX" secondItem="VNQ-bW-xLE" secondAttribute="centerX" id="Uew-sY-OAt"/>
+                                                                    <constraint firstItem="9le-As-KeK" firstAttribute="centerY" secondItem="VNQ-bW-xLE" secondAttribute="centerY" id="gvA-ya-U87"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jn1-dW-4XL">
+                                                                <rect key="frame" x="388.5" y="0.0" width="129.5" height="77"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycx-os-Yod" customClass="UIAnimButton" customModule="RyanCalculator" customModuleProvider="target">
+                                                                        <rect key="frame" x="42.5" y="16.5" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="45" id="B4b-UO-7kx"/>
+                                                                            <constraint firstAttribute="height" constant="45" id="lS1-lb-Ekh"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                                        <state key="normal" title="+">
+                                                                            <color key="titleColor" red="0.34509803921568627" green="0.70196078431372544" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="onClickPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeS-oF-fOh"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="ycx-os-Yod" firstAttribute="centerX" secondItem="Jn1-dW-4XL" secondAttribute="centerX" id="2Va-V0-dsH"/>
+                                                                    <constraint firstItem="ycx-os-Yod" firstAttribute="centerY" secondItem="Jn1-dW-4XL" secondAttribute="centerY" id="mjp-l9-c67"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="12" left="16" bottom="12" right="16"/>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="GjH-cv-fqB" firstAttribute="bottom" secondItem="5UQ-nQ-kic" secondAttribute="bottom" id="GDn-z4-8cN"/>
+                                            <constraint firstItem="GjH-cv-fqB" firstAttribute="top" secondItem="5UQ-nQ-kic" secondAttribute="top" id="Twe-Hu-Qre"/>
+                                            <constraint firstItem="GjH-cv-fqB" firstAttribute="leading" secondItem="5UQ-nQ-kic" secondAttribute="leading" id="VKE-JL-PHE"/>
+                                            <constraint firstItem="GjH-cv-fqB" firstAttribute="trailing" secondItem="5UQ-nQ-kic" secondAttribute="trailing" id="VhB-mg-b72"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="zg0-29-ihk" firstAttribute="leading" secondItem="DO9-dg-ASs" secondAttribute="leading" id="8sJ-GI-uz6"/>
+                                    <constraint firstAttribute="trailing" secondItem="zg0-29-ihk" secondAttribute="trailing" id="XLz-1z-2cA"/>
+                                    <constraint firstItem="zg0-29-ihk" firstAttribute="height" secondItem="DO9-dg-ASs" secondAttribute="height" multiplier="1/3" id="XXi-w5-wbr"/>
+                                    <constraint firstItem="5UQ-nQ-kic" firstAttribute="top" secondItem="zg0-29-ihk" secondAttribute="bottom" id="YpY-dg-cir"/>
+                                    <constraint firstItem="5UQ-nQ-kic" firstAttribute="leading" secondItem="DO9-dg-ASs" secondAttribute="leading" id="fZh-hT-uWO"/>
+                                    <constraint firstItem="zg0-29-ihk" firstAttribute="top" secondItem="DO9-dg-ASs" secondAttribute="top" id="qPs-M2-phQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="5UQ-nQ-kic" secondAttribute="trailing" id="xbl-74-igh"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="glowColor">
                                         <color key="value" red="0.28235294117647058" green="0.67843137254901964" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
@@ -53,6 +476,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMs-bS-DF1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.22352941179999999" green="0.28627450980000002" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -62,6 +488,7 @@
                             <constraint firstItem="DO9-dg-ASs" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-40" id="ELu-vi-mDJ"/>
                             <constraint firstItem="DO9-dg-ASs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="-25" id="KBs-eC-bAD"/>
                             <constraint firstItem="ZRn-x2-zY6" firstAttribute="leading" secondItem="DO9-dg-ASs" secondAttribute="leading" constant="35" id="NIF-Us-Wpe"/>
+                            <constraint firstItem="5UQ-nQ-kic" firstAttribute="bottom" secondItem="ZRn-x2-zY6" secondAttribute="top" id="ZKr-3Y-7Md"/>
                             <constraint firstItem="ZRn-x2-zY6" firstAttribute="centerY" secondItem="DO9-dg-ASs" secondAttribute="bottom" id="dDH-nK-Re0"/>
                             <constraint firstItem="ZRn-x2-zY6" firstAttribute="trailing" secondItem="DO9-dg-ASs" secondAttribute="trailing" constant="-35" id="qpe-rN-n89"/>
                         </constraints>
