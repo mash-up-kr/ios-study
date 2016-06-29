@@ -49,7 +49,7 @@ class UIJellyAnimationButton: UIGlowRoundedButton {
         
         let animation: (() -> Void) = {
 //            self.transform = CGAffineTransformTranslate(CGAffineTransformMakeScale(1.1, 0.95), 0, 0)
-            self.transform = CGAffineTransformMakeScale(1.1, 0.95)
+            self.transform = CGAffineTransformMakeScale(1.075, 0.95)
         }
         UIView.animateWithDuration(0.75, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.5, options: .CurveEaseIn, animations: animation, completion: nil)
     }
