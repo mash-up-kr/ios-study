@@ -11,8 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var resultLabel: UILabel!
-    var stack = Array<String>()
-    //var operandStack = Array<String>()
+    var array = Array<String>()
     var checkingOfUserNumber = false
  
     override func viewDidLoad() {
@@ -38,65 +37,119 @@ class ViewController: UIViewController {
     
     //연산자
     @IBAction func pushOperationToStack(sender: UIButton) {
-        stack.append(resultLabel.text!)
-        stack.append(sender.currentTitle!)
+        array.append(resultLabel.text!)
+        array.append(sender.currentTitle!)
         checkingOfUserNumber = false
+        
+    }
+
+    
+    //AC
+    @IBAction func pushOperationToStack() {
+        array.removeAll()
+        resultLabel.text = "0"
+        checkingOfUserNumber = false
+    }
+    
+    
+    
+    func operate() -> String{
+        
+        var tmpIdx = 0
+        var tmpArray = Array<String>()
+        var doing = false
+        
+        tmpArray.append(array[0])
+        
+        for idx in 1..<array.count {
+            
+            if array[idx-1] == "*" || array[idx-1] == "/" {
+                doing = true
+            }
+            
+            if doing  {
+                switch array[idx-1] {
+                case "*":
+                    let n1 :Double? = Double(array[idx-2])
+                    let n2 :Double? = Double(array[idx])
+                    tmpIdx -= 1
+                    tmpArray[tmpIdx] = String(n1! * n2!)
+                    array[idx] = String(n1! * n2!)
+                    doing = false
+                    
+                case "/":
+                    let n1 :Double? = Double(array[idx-2])
+                    let n2 :Double? = Double(array[idx])
+                    tmpIdx -= 1
+                    tmpArray[tmpIdx] = String(n1! / n2!)
+                    array[idx] = String(n1! / n2!)
+                    doing = false
+                    
+                default: break
+                }
+            }
+            else {
+                if array[idx] != "*" && array[idx] != "/"{
+                    tmpArray.append(array[idx])
+                }
+                tmpIdx += 1
+            }
+        }
+        
+        array = tmpArray
+        tmpArray.removeAll()
+        doing = false
+        tmpIdx = 0
+        tmpArray.append(array[0])
+        
+        for idx in 1..<array.count {
+            
+            if array[idx-1] == "+" || array[idx-1] == "-" {
+                doing = true
+            }
+            
+            if doing  {
+                
+                switch array[idx-1] {
+                case "+":
+                    let n1 :Double? = Double(array[idx-2])
+                    let n2 :Double? = Double(array[idx])
+                    tmpIdx -= 1
+                    tmpArray[tmpIdx] = String(n1! + n2!)
+                    array[idx] = String(n1! + n2!)
+                    doing = false
+                    
+                case "-":
+                    let n1 :Double? = Double(array[idx-2])
+                    let n2 :Double? = Double(array[idx])
+                    tmpIdx -= 1
+                    tmpArray[tmpIdx] = String(n1! - n2!)
+                    array[idx] = String(n1! - n2!)
+                    doing = false
+                    
+                default: break
+                }
+            }
+            else {
+                if array[idx] != "+" && array[idx] != "-"{
+                    tmpArray.append(array[idx])
+                }
+                tmpIdx += 1
+            }
+            
+        }
+        
+        return tmpArray[0]
         
     }
     
     
     //=
-    func operate() {
-     
-        var startIdx = 0
-        
-        for idx in startIdx..<stack.count {
-            
-            switch stack[idx] {
-            case "*":
-                let n1 :Double? = Double(stack[idx-1])
-                let n2 :Double? = Double(stack[idx+1])
-                stack[idx] = String(n1! * n2!)
-                stack.removeAtIndex(idx-1)
-                stack.removeAtIndex(idx)
-                startIdx = idx
-            case "/":
-                let n1 :Double? = Double(stack[idx-1])
-                let n2 :Double? = Double(stack[idx+1])
-                stack[idx] = String(n1! / n2!)
-                stack.removeAtIndex(idx-1)
-                stack.removeAtIndex(idx)
-            default: break
-            }
-        }
-        
-        for idx in 0...stack.count {
-            switch stack[idx] {
-            case "+":
-                let n1 :Double? = Double(stack[idx-1])
-                let n2 :Double? = Double(stack[idx+1])
-                stack[idx] = String(n1! + n2!)
-                stack.removeAtIndex(idx-1)
-                stack.removeAtIndex(idx)
-            case "-":
-                let n1 :Double? = Double(stack[idx-1])
-                let n2 :Double? = Double(stack[idx+1])
-                stack[idx] = String(n1! - n2!)
-                stack.removeAtIndex(idx-1)
-                stack.removeAtIndex(idx)
-            default: print(stack)
-            }
-        }
-        
-    }
-    
-    
-    
    @IBAction func displayValue() {
 
-        stack.append(resultLabel.text!)
-        operate()
-        resultLabel.text = stack[0]
+        array.append(resultLabel.text!)
+        let result = operate()
+        resultLabel.text = result
     }
     
 
