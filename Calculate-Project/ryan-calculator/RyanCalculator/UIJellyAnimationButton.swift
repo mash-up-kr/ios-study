@@ -9,7 +9,17 @@
 import UIKit
 
 @IBDesignable
-class UIJellyAnimationButton: UIGlowRoundedButton {
+class UIJellyAnimationButton: UIButton {
+    
+    @IBInspectable var glowBackgroundColor: UIColor = UIColor.whiteColor() {
+        didSet { setNeedsDisplay() }
+    }
+    @IBInspectable var glowColor: UIColor = UIColor.blackColor() {
+        didSet { setNeedsDisplay() }
+    }
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet { setNeedsDisplay() }
+    }
     
     private var touchDownAnimating: Bool = false
     private var needTouchDownAnimation: Bool = false
@@ -44,22 +54,22 @@ class UIJellyAnimationButton: UIGlowRoundedButton {
         removeTarget(self, action: #selector(UIAnimButton.touchUp), forControlEvents: .TouchUpOutside)
     }
     
-    func touchDown() {
-        print("touchDown")
+    override func drawRect(rect: CGRect) {
+        super.drawRect(rect)
         
-        let animation: (() -> Void) = {
-//            self.transform = CGAffineTransformTranslate(CGAffineTransformMakeScale(1.1, 0.95), 0, 0)
-            self.transform = CGAffineTransformMakeScale(1.075, 0.95)
-        }
+        layer.backgroundColor = glowBackgroundColor.CGColor
+        layer.cornerRadius = cornerRadius
+        layer.masksToBounds = true
+        layer.appendShadow(glowColor, radius: 10, opacity: 0.5, yOffset: 0)
+    }
+    
+    func touchDown() {
+        let animation: (() -> Void) = { self.transform = CGAffineTransformMakeScale(1.065, 0.95) }
         UIView.animateWithDuration(0.75, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.5, options: .CurveEaseIn, animations: animation, completion: nil)
     }
     
     func touchUp() {
-        print("touchUp")
-        
-        let animation: (() -> Void) = {
-            self.transform = CGAffineTransformIdentity
-        }
+        let animation: (() -> Void) = { self.transform = CGAffineTransformIdentity }
         UIView.animateWithDuration(0.75, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.5, options: .CurveEaseIn, animations: animation, completion: nil)
     }
     
