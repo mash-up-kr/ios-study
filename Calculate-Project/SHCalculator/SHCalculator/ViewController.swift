@@ -56,10 +56,10 @@ class ViewController: UIViewController {
     func operate() -> String{
         
         var tmpIdx = 0
-        var tmpStack = Array<String>()
+        var tmpArray = Array<String>()
         var doing = false
         
-        tmpStack.append(array[0])
+        tmpArray.append(array[0])
         
         for idx in 1..<array.count {
             
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
                     let n1 :Double? = Double(array[idx-2])
                     let n2 :Double? = Double(array[idx])
                     tmpIdx -= 1
-                    tmpStack[tmpIdx] = String(n1! * n2!)
+                    tmpArray[tmpIdx] = String(n1! * n2!)
                     array[idx] = String(n1! * n2!)
                     doing = false
                     
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
                     let n1 :Double? = Double(array[idx-2])
                     let n2 :Double? = Double(array[idx])
                     tmpIdx -= 1
-                    tmpStack[tmpIdx] = String(n1! / n2!)
+                    tmpArray[tmpIdx] = String(n1! / n2!)
                     array[idx] = String(n1! / n2!)
                     doing = false
                     
@@ -90,17 +90,17 @@ class ViewController: UIViewController {
             }
             else {
                 if array[idx] != "*" && array[idx] != "/"{
-                    tmpStack.append(array[idx])
+                    tmpArray.append(array[idx])
                 }
                 tmpIdx += 1
             }
         }
         
-        array = tmpStack
-        tmpStack.removeAll()
+        array = tmpArray
+        tmpArray.removeAll()
         doing = false
         tmpIdx = 0
-        tmpStack.append(array[0])
+        tmpArray.append(array[0])
         
         for idx in 1..<array.count {
             
@@ -115,7 +115,7 @@ class ViewController: UIViewController {
                     let n1 :Double? = Double(array[idx-2])
                     let n2 :Double? = Double(array[idx])
                     tmpIdx -= 1
-                    tmpStack[tmpIdx] = String(n1! + n2!)
+                    tmpArray[tmpIdx] = String(n1! + n2!)
                     array[idx] = String(n1! + n2!)
                     doing = false
                     
@@ -123,7 +123,7 @@ class ViewController: UIViewController {
                     let n1 :Double? = Double(array[idx-2])
                     let n2 :Double? = Double(array[idx])
                     tmpIdx -= 1
-                    tmpStack[tmpIdx] = String(n1! - n2!)
+                    tmpArray[tmpIdx] = String(n1! - n2!)
                     array[idx] = String(n1! - n2!)
                     doing = false
                     
@@ -132,14 +132,14 @@ class ViewController: UIViewController {
             }
             else {
                 if array[idx] != "+" && array[idx] != "-"{
-                    tmpStack.append(array[idx])
+                    tmpArray.append(array[idx])
                 }
                 tmpIdx += 1
             }
             
         }
         
-        return tmpStack[0]
+        return tmpArray[0]
         
     }
     
