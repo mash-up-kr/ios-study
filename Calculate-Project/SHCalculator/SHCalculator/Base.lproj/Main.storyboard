@@ -45,11 +45,17 @@
                                                 <rect key="frame" x="150" y="0.0" width="150" height="100"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="+/-"/>
+                                                <connections>
+                                                    <action selector="changePrefixOperator" destination="BYZ-38-t0r" eventType="touchUpInside" id="OaU-qd-htM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25J-VP-DVF">
                                                 <rect key="frame" x="300" y="0.0" width="150" height="100"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="%"/>
+                                                <connections>
+                                                    <action selector="changeToPercent" destination="BYZ-38-t0r" eventType="touchUpInside" id="UT4-5M-Tig"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY8-U0-3qd">
                                                 <rect key="frame" x="450" y="0.0" width="150" height="100"/>
@@ -211,6 +217,9 @@
                                                 <rect key="frame" x="300" y="0.0" width="150" height="100"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="."/>
+                                                <connections>
+                                                    <action selector="appendNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eed-ke-Syv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUU-ov-bzu">
                                                 <rect key="frame" x="450" y="0.0" width="150" height="100"/>
