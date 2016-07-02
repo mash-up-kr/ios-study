@@ -60,6 +60,24 @@ protocol MainPresenterProtocol: class, PresenterProtocol {
     
     // MARK: ViewController -> Presenter : User Action
     
+    func onClickClear()
+    func onClickDot()
+    func onClick0()
+    func onClick1()
+    func onClick2()
+    func onClick3()
+    func onClick4()
+    func onClick5()
+    func onClick6()
+    func onClick7()
+    func onClick8()
+    func onClick9()
+    func onClickPlus()
+    func onClickMinus()
+    func onClickMultiple()
+    func onClickDivide()
+    func onClickResult()
+
 }
 
 protocol MainPresenterProtocolForInteractor: class, PresenterProtocol {
