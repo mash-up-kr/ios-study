@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>currencyCode</key>
+		<string>KRW</string>
+		<key>currencyName</key>
+		<string>Won</string>
+		<key>countryName</key>
+		<string>South Korean</string>
+		<key>imageName</key>
+		<string>korea</string>
+	</dict>
+	<dict>
+		<key>currencyCode</key>
+		<string>USD</string>
+		<key>currencyName</key>
+		<string>Dollor</string>
+		<key>countryName</key>
+		<string>United State</string>
+		<key>imageName</key>
+		<string>america</string>
+	</dict>
+	<dict>
+		<key>currencyCode</key>
+		<string>GBP</string>
+		<key>currencyName</key>
+		<string>Pound</string>
+		<key>countryName</key>
+		<string>Great Britain</string>
+		<key>imageName</key>
+		<string>uk</string>
+	</dict>
+	<dict>
+		<key>currencyCode</key>
+		<string>CNY</string>
+		<key>currencyName</key>
+		<string>Yuan</string>
+		<key>countryName</key>
+		<string>ChiNa</string>
+		<key>imageName</key>
+		<string>china</string>
+	</dict>
+</array>
+</plist>
