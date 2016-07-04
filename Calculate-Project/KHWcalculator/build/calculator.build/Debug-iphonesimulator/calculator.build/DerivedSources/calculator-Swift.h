@@ -120,17 +120,35 @@ SWIFT_CLASS("_TtC10calculator11AppDelegate")
 
 SWIFT_CLASS("_TtC10calculator14ViewController")
 @interface ViewController : UIViewController
-@property (nonatomic) NSInteger firstNum;
-@property (nonatomic) NSInteger secondNum;
+@property (nonatomic) float firstNum;
+@property (nonatomic) float secondNum;
 @property (nonatomic, copy) NSString * _Nonnull oper;
 @property (nonatomic) NSInteger opflag;
+@property (nonatomic) NSInteger pointFlag;
+@property (nonatomic, copy) NSString * _Nonnull content;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified resultLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified contentLabel;
 - (IBAction)equalBtn:(UIButton * _Nonnull)sender;
 - (IBAction)numberBtn:(id _Nonnull)sender;
 - (IBAction)operationBtn:(id _Nonnull)sender;
 - (IBAction)ACBtn:(id _Nonnull)sender;
-- (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+- (void)operfunc;
+- (void)reset;
+- (float)makeIntNum:(float)number plusNumber:(float)plusNumber;
+- (float)makeFloatNum:(float)number plusNumber:(float)plusNumber;
+- (void)printContentLabel;
+- (NSString * _Nonnull)isOp:(NSInteger)tag;
+- (IBAction)pointBtn:(id _Nonnull)sender;
+- (IBAction)bracketBtn:(id _Nonnull)sender;
+@property (nonatomic, copy) NSArray<NSString *> * _Null_unspecified stack;
+@property (nonatomic) NSInteger top;
+- (BOOL)isempty;
+- (BOOL)isFull;
+- (void)provide:(NSString * _Nonnull)x;
+- (NSString * _Nonnull)pop;
+- (void)calculate;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

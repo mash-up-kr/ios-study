@@ -1,0 +1,64 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "GreetingData"
+- "GreetingProvider"
+- "GreetingOutput"
+- "GreetingViewEventHandler"
+- "GreetingView"
+provides-nominal:
+- "V10calculator12GreetingData"
+- "P10calculator16GreetingProvider"
+- "P10calculator14GreetingOutput"
+- "P10calculator24GreetingViewEventHandler"
+- "P10calculator12GreetingView"
+provides-member:
+- ["V10calculator12GreetingData", ""]
+- ["P10calculator16GreetingProvider", ""]
+- ["P10calculator14GreetingOutput", ""]
+- ["P10calculator24GreetingViewEventHandler", ""]
+- ["P10calculator12GreetingView", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "FloatLiteralType"
+- "GreetingProvider"
+- "String"
+- "GreetingOutput"
+- "GreetingViewEventHandler"
+- "GreetingData"
+- "GreetingView"
+- "StringLiteralType"
+- "IntegerLiteralType"
+- "Float"
+depends-member:
+- ["V10calculator12GreetingData", "Float"]
+- ["V10calculator12GreetingData", "String"]
+- ["V10calculator12GreetingData", "content"]
+- ["V10calculator12GreetingData", "firstNum"]
+- ["V10calculator12GreetingData", "init"]
+- ["V10calculator12GreetingData", "oper"]
+- ["V10calculator12GreetingData", "opflag"]
+- ["V10calculator12GreetingData", "pointFlag"]
+- ["V10calculator12GreetingData", "secondNum"]
+- ["P10calculator14GreetingOutput", "GreetingData"]
+- ["P10calculator14GreetingOutput", "receiveGreetingData"]
+- ["P10calculator16GreetingProvider", "provideGreetingData"]
+- ["P10calculator12GreetingView", "String"]
+- ["P10calculator12GreetingView", "setGreeting"]
+- ["P10calculator24GreetingViewEventHandler", "didTapShowGreetingButton"]
+depends-nominal:
+- "V10calculator12GreetingData"
+- "P10calculator14GreetingOutput"
+- "P10calculator16GreetingProvider"
+- "P10calculator12GreetingView"
+- "P10calculator24GreetingViewEventHandler"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "8777e018f8d3d551e9f0e4439dde2eb5"

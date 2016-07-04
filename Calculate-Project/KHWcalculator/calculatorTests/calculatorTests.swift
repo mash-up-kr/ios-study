@@ -10,9 +10,13 @@ import XCTest
 @testable import calculator
 
 class calculatorTests: XCTestCase {
+    var vc : ViewController!
     
     override func setUp() {
         super.setUp()
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        vc = storyboard.instantiateInitialViewController() as! ViewController
+
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -22,6 +26,7 @@ class calculatorTests: XCTestCase {
     }
     
     func testExample() {
+        
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
@@ -32,5 +37,12 @@ class calculatorTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testCalculator() {
+        XCTAssert(true)
+    }
+
+    
+    
     
 }
